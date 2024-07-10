@@ -13,6 +13,14 @@ body {
     font-family: "Poppins";
 }
 
+.container {
+    max-width: 1400px;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /* ////////////////////////////   Swiper Slider  ////////////////////*/
 .swiper {
@@ -300,21 +308,21 @@ nav .logo a {
 
 .section-1{
     width: 100%;
-    height: calc(100vh - 100px);
-    background-color: red;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
 }
 .section-1 .texts{
-    width: 55%;
-    height: 100%;
-    padding: 180px 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--background-color);
     color: var(--heading-color);
 }
 .section-1 .texts h1{
     width: 100%;
     margin-bottom: 60px;
-    font-size: 36px;
+    font-size: clamp(1.875rem, 4vw, 3.5rem);;
     font-weight: 600;
     position: relative;
 }
@@ -331,17 +339,10 @@ nav .logo a {
     font-size: 14px;
 }
 .section-1 .login{
-    width: 45%;
-    height: 100%;
-    padding: 20px;
     background-color: var(--background-color);
 }
 .login .login-info{
-    width: 530px;
-    height: 530px;
     background-color: #F9F9FA ;
-    margin-top: 50px;
-    margin-left: 50px;
     padding: 20px;
     color: var(--heading-color);
 }
@@ -358,8 +359,7 @@ nav .logo a {
 }
 .login .login-inputs{
     width: 100%;
-    height: auto;
-    display: grid;
+    display: flex;
     flex-direction: column;
 }
 .login-inputs input{
@@ -399,9 +399,6 @@ input[type="number"] {
     position: relative;
 }
 .login .login-inputs button{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 150px;
     height: 44px;
     background-color: var(--accent-color);
@@ -417,4 +414,10 @@ input[type="number"] {
 }
 .login .login-inputs button:hover{
     background-color: color-mix(in srgb, var(--accent-color), transparent 20%);;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto 40%;
+    column-gap: 1.5rem;
 }
