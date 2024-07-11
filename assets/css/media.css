@@ -7,7 +7,15 @@
 }
 
 @media (width <= 991px) {
-    
+    .construction-card__wrapper {
+        grid-template-columns: repeat(1, auto);
+    }
+    .page-heading::before {
+        left: -45%;
+    }
+    .page-heading::after {
+        right: -45%;
+    }
     .row {
         grid-template-columns: auto;
     }
@@ -119,6 +127,15 @@
 
 
 @media (width <= 768px) {
+    .construction-card__wrapper {
+        grid-template-rows: repeat(1, auto);
+    }
+    .construction-card {
+        flex-direction: column;
+    }
+    .construction-card .construction-card__img, .construction-card .construction-card__info {
+        width: 100%;
+    }
     nav {
         padding: 0 15px !important;
     }
