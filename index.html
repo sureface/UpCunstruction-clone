@@ -1,246 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murod Bulding</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Murod Bulding</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="./assets/css/media.css" />
-</head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/img/hero-carousel/hero-carousel-1.jpg" alt="err" />
+          <div class="swiper-mask"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="err" />
+          <div class="swiper-mask"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="err" />
+          <div class="swiper-mask"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/hero-carousel/hero-carousel-4.jpg" alt="err" />
+          <div class="swiper-mask"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/hero-carousel/hero-carousel-5.jpg" alt="err" />
+          <div class="swiper-mask"></div>
+        </div>
+      </div>
 
-<body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./assets/img/hero-carousel/hero-carousel-1.jpg" alt="err" />
-        <div class="swiper-mask"></div>
+      <div class="swiper-info">
+        <h2>Welcome to Murod Bulding</h2>
+        <div class="swiper-line"></div>
+        <div class="swiper-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </div>
+        <a href="#section-1" class="swiper-btn">Get Started</a>
       </div>
-      <div class="swiper-slide">
-        <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="err" />
-        <div class="swiper-mask"></div>
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="err" />
-        <div class="swiper-mask"></div>
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/img/hero-carousel/hero-carousel-4.jpg" alt="err" />
-        <div class="swiper-mask"></div>
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/img/hero-carousel/hero-carousel-5.jpg" alt="err" />
-        <div class="swiper-mask"></div>
-      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
-    <div class="swiper-info">
-      <h2>Welcome to Murod Bulding</h2>
-      <div class="swiper-line"></div>
-      <div class="swiper-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
+    <!-- Nav bar -->
+    <nav id="navbar">
+      <div class="logo">
+        <a href="index.html">Murod Bulding<span>.</span></a>
       </div>
-      <a href="#section-1" class="swiper-btn">Get Started</a>
-    </div>
+      <div class="navbar-menu">
+        <div class="navbar-mask"></div>
+        <ul>
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li class="dropdown">
+            <div class="dropdown-head">
+              <a href="#"
+                >DROPDOWN
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </div>
+            <div class="dropdown-body">
+              <ul>
+                <li>
+                  <p>Dropdown 1</p>
+                </li>
+                <li class="deep-drop">
+                  <div class="deep-drop-head">
+                    <p>
+                      Deep Dropdown
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </p>
+                  </div>
+                  <div class="deep-drop-body">
+                    <ul>
+                      <li><span>Deep Dropdown 1</span></li>
+                      <li><span>Deep Dropdown 2</span></li>
+                      <li><span>Deep Dropdown 3</span></li>
+                      <li><span>Deep Dropdown 4</span></li>
+                      <li><span>Deep Dropdown 5</span></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>Dropdown 2</p>
+                </li>
+                <li>
+                  <p>Dropdown 3</p>
+                </li>
+                <li>
+                  <p>Dropdown 4</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+          <li class="nav-close">
+            <i class="fa-solid fa-x"></i>
+          </li>
+        </ul>
+        <div class="nav-bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
 
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+    <section class="section-1" id="section-1">
+      <div class="container">
+        <div class="row">
+          <div class="texts">
+            <h1>Minus hic non reiciendis ea possimus at quia.</h1>
+            <p>
+              Rem id rerum. Debitis deserunt quidem delectus expedita ducimus
+              dolor. Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque
+              perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi
+              possimus ut delectus dicta. <br />
+              <br />
+              Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit
+              eligendi labore culpa eos. Deserunt porro magni qui necessitatibus
+              dolorem at animi cupiditate.
+            </p>
+          </div>
+          <div class="login">
+            <div class="login-info">
+              <h3>GET A QUOTE</h3>
+              <p>
+                Vel nobis odio laboriosam et hic voluptatem. Inventore vitae
+                totam. Rerum repellendus enim linead sero park flows.
+              </p>
+              <form class="login-inputs" id="myForm" method="POST">
+                <input name="text" type="text" required placeholder="Name" />
+                <input name="email" type="email" required placeholder="Email" />
+                <input
+                  name="number"
+                  type="number"
+                  required
+                  placeholder="Phoone"
+                />
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                ></textarea>
 
-  <!-- Nav bar -->
-  <nav id="navbar">
-    <div class="logo">
-      <a href="index.html">Murod Bulding<span>.</span></a>
-    </div>
-    <div class="navbar-menu">
-      <div class="navbar-mask"></div>
-      <ul>
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li class="dropdown">
-          <div class="dropdown-head">
-            <a href="#">DROPDOWN
-              <i class="fa-solid fa-chevron-down"></i>
+                <button type="submit" onclick="submitForm()">
+                  Get a quote
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cunstruction">
+      <div class="container">
+        <div class="page-heading_wrapper">
+          <div class="page-heading">Constructions</div>
+        </div>
+        <div class="page-subtext">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </div>
+
+        <div class="construction-card__wrapper">
+          <div class="construction-card">
+            <div class="construction-card__img">
+              <img src="./assets/img/constructions-1.jpg" alt="err" />
+            </div>
+            <div class="construction-card__info">
+              <div class="construction-card__heading">
+                Eligendi omnis sunt veritatis.
+              </div>
+              <div class="construction-card__desc">
+                Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi
+                voluptatem placeat deleniti adipisci. Cum delectus doloribus non
+                veritatis. Officia temporibus illo magnam. Dolor eos et.
+              </div>
+            </div>
+          </div>
+          <div class="construction-card">
+            <div class="construction-card__img">
+              <img src="./assets/img/constructions-2.jpg" alt="err" />
+            </div>
+            <div class="construction-card__info">
+              <div class="construction-card__heading">
+                Eligendi omnis sunt veritatis.
+              </div>
+              <div class="construction-card__desc">
+                Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi
+                voluptatem placeat deleniti adipisci. Cum delectus doloribus non
+                veritatis. Officia temporibus illo magnam. Dolor eos et.
+              </div>
+            </div>
+          </div>
+          <div class="construction-card">
+            <div class="construction-card__img">
+              <img src="./assets/img/constructions-3.jpg" alt="err" />
+            </div>
+            <div class="construction-card__info">
+              <div class="construction-card__heading">
+                Eligendi omnis sunt veritatis.
+              </div>
+              <div class="construction-card__desc">
+                Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi
+                voluptatem placeat deleniti adipisci. Cum delectus doloribus non
+                veritatis. Officia temporibus illo magnam. Dolor eos et.
+              </div>
+            </div>
+          </div>
+          <div class="construction-card">
+            <div class="construction-card__img">
+              <img src="./assets/img/constructions-4.jpg" alt="err" />
+            </div>
+            <div class="construction-card__info">
+              <div class="construction-card__heading">
+                Eligendi omnis sunt veritatis.
+              </div>
+              <div class="construction-card__desc">
+                Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi
+                voluptatem placeat deleniti adipisci. Cum delectus doloribus non
+                veritatis. Officia temporibus illo magnam. Dolor eos et.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container services-container">
+      <div class="page-heading_wrapper">
+        <div class="page-heading servis-page-heading">Services</div>
+      </div>
+      <div class="page-subtext">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </div>
+      <div class="services-card__wrapper">
+        <div class="services-card">
+          <div class="services-card_icon">
+            <i class="fa-solid fa-mountain-city"></i>
+          </div>
+          <div class="services-card-info">
+            <h3>Nesciunt Mete</h3>
+            <p>
+              Provident nihil minus qui consequatur non omnis maiores. Eos
+              accusantium minus dolores iure perferendis tempore et consequatur.
+            </p>
+            <a href="#"
+              >Read more
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
-          <div class="dropdown-body">
-            <ul>
-              <li>
-                <p>Dropdown 1</p>
-              </li>
-              <li class="deep-drop">
-                <div class="deep-drop-head">
-                  <p>
-                    Deep Dropdown
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </p>
-                </div>
-                <div class="deep-drop-body">
-                  <ul>
-                    <li><span>Deep Dropdown 1</span></li>
-                    <li><span>Deep Dropdown 2</span></li>
-                    <li><span>Deep Dropdown 3</span></li>
-                    <li><span>Deep Dropdown 4</span></li>
-                    <li><span>Deep Dropdown 5</span></li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <p>Dropdown 2</p>
-              </li>
-              <li>
-                <p>Dropdown 3</p>
-              </li>
-              <li>
-                <p>Dropdown 4</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#">CONTACT</a>
-        </li>
-        <li class="nav-close">
-          <i class="fa-solid fa-x"></i>
-        </li>
-      </ul>
-      <div class="nav-bars">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-  </nav>
-
-  <section class="section-1" id="section-1">
-    <div class="container">
-      <div class="row">
-        <div class="texts">
-          <h1>Minus hic non reiciendis ea possimus at quia.</h1>
-          <p>
-            Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor.
-            Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque perspiciatis fuga
-            ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus
-            dicta. <br />
-            <br />
-            Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit
-            eligendi labore culpa eos. Deserunt porro magni qui necessitatibus
-            dolorem at animi cupiditate.
-          </p>
         </div>
-        <div class="login">
-          <div class="login-info">
-            <h3>GET A QUOTE</h3>
+        <div class="services-card">
+          <div class="services-card_icon">
+            <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+          </div>
+          <div class="services-card-info">
+            <h3>Eosle Commodi</h3>
             <p>
-              Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam.
-              Rerum repellendus enim linead sero park flows.
+              Ut autem aut autem non a. Sint sint sit facilis nam iusto sint.
+              Libero corrupti neque eum hic non ut nesciunt dolorem.
             </p>
-            <form class="login-inputs" id="myForm" method="POST">
-
-              <input name="text" type="text" required placeholder="Name" />
-              <input name="email" type="email" required placeholder="Email" />
-              <input name="number" type="number" required placeholder="Phoone" />
-              <textarea name="message" rows="6" placeholder="Message" required></textarea>
-
-              <button type="submit" onclick="submitForm()">Get a quote</button>
-            </form>
-
+            <a href="#"
+              >Read more
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="cunstruction">
-    <div class="container">
-      <div class="page-heading_wrapper">
-        <div class="page-heading">Constructions</div>
-      </div>
-      <div class="page-subtext">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</div>
-
-      <div class="construction-card__wrapper">
-        <div class="construction-card">
-          <div class="construction-card__img">
-            <img src="./assets/img/constructions-1.jpg" alt="err">
+        <div class="services-card">
+          <div class="services-card_icon">
+            <i class="fa-solid fa-compass-drafting"></i>
           </div>
-          <div class="construction-card__info">
-            <div class="construction-card__heading">Eligendi omnis sunt veritatis.</div>
-            <div class="construction-card__desc">
-              Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum
-              delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.
-            </div>
+          <div class="services-card-info">
+            <h3>Ledo Markt</h3>
+            <p>
+              Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus
+              ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+            </p>
+            <a href="#"
+              >Read more
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="construction-card">
-          <div class="construction-card__img">
-            <img src="./assets/img/constructions-1.jpg" alt="err">
+        <div class="services-card">
+          <div class="services-card_icon">
+            <i class="fa-solid fa-trowel-bricks"></i>
           </div>
-          <div class="construction-card__info">
-            <div class="construction-card__heading">Eligendi omnis sunt veritatis.</div>
-            <div class="construction-card__desc">
-              Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum
-              delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.
-            </div>
-          </div>
-        </div>
-        <div class="construction-card">
-          <div class="construction-card__img">
-            <img src="./assets/img/constructions-1.jpg" alt="err">
-          </div>
-          <div class="construction-card__info">
-            <div class="construction-card__heading">Eligendi omnis sunt veritatis.</div>
-            <div class="construction-card__desc">
-              Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum
-              delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.
-            </div>
+          <div class="services-card-info">
+            <h3>Asperiores Commodit</h3>
+            <p>
+              Non et temporibus minus omnis sed dolor esse consequatur.
+              Cupiditate sed error ea fuga sit provident adipisci neque.
+            </p>
+            <a href="#"
+              >Read more
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="construction-card">
-          <div class="construction-card__img">
-            <img src="./assets/img/constructions-1.jpg" alt="err">
+        <div class="services-card">
+          <div class="services-card_icon">
+            <i class="fa-solid fa-helmet-safety"></i>
           </div>
-          <div class="construction-card__info">
-            <div class="construction-card__heading">Eligendi omnis sunt veritatis.</div>
-            <div class="construction-card__desc">
-              Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum
-              delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.
-            </div>
+          <div class="services-card-info">
+            <h3>Velit Doloremque</h3>
+            <p>
+              Cumque et suscipit saepe. Est maiores autem enim facilis ut aut
+              ipsam corporis aut. Sed animi at autem alias eius labore.
+            </p>
+            <a href="#"
+              >Read more
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="services-card">
+          <div class="services-card_icon">
+            <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+          </div>
+          <div class="services-card-info">
+            <h3>Dolori Architecto</h3>
+            <p>
+              Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque
+              non et debitis iure. Corrupti recusandae ducimus enim.
+            </p>
+            <a href="#"
+              >Read more
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <script>
-    function submitForm() {
-      document.getElementById("myForm").submit();
-    }
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      function submitForm() {
+        document.getElementById("myForm").submit();
+      }
+    </script>
 
-  <script src="./assets/js/main.js"></script>
-</body>
-
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
