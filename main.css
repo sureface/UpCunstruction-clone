@@ -667,7 +667,7 @@ input[type="number"] {
 
 .consequatur .consequatur-wrapper{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto auto;
     gap: 60px;
     padding: 60px 0;
 }
