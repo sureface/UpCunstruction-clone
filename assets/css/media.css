@@ -7,6 +7,24 @@
 }
 
 @media (width <= 991px) {
+  .services-card-delay6{
+    --delay: 400;
+  }
+  .services-card-delay5{
+    --delay: 0;
+  }
+  .services-card__wrapper .services-card .services-card-delay4{
+    --delay: 400;
+  }
+  .services-card__wrapper .services-card .services-card-delay3{
+    --delay: 0;
+  }
+  .services-card-delay2{
+    --delay: 400;
+  }
+  .services-card-delay1{
+    --delay: 0;
+  }
   .consequatur .consequatur-wrapper {
     display: flex;
     flex-direction: column;
