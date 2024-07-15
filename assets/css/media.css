@@ -14,11 +14,7 @@
     justify-content: center;
   }
   .consequatur .consequatur-img {
-    width: 720px;
     height: 400px;
-  }
-  .consequatur-info{
-    padding: 0 120px;
   }
   .services-container .servis-page-heading::before {
     left: -70px;
@@ -150,7 +146,6 @@
 
 @media (width <= 768px) {
     .consequatur .consequatur-img {
-        width: 540px;
         height: 400px;
       }
   .services-card__wrapper {
