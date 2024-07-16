@@ -755,3 +755,108 @@ input[type="number"] {
     color: var(--surface-color);
     background-color: var(--accent-color);
 }
+
+/* /////////////////////  Section Tabs  ////////////////////// */
+
+.section-tabs {
+  padding: 60px 0;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px
+}
+
+.tab-link {
+  position: relative;
+  border: none;
+  background: none;
+  color: var(--heading-color);
+  font-size:  var(--fs-18);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.tab-link::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--light-gray);
+  transition: all 0.3s ease;
+}
+
+.tab-link:hover::before {
+  background-color: var(--light-gray-hover);
+}
+
+.tab-link.active::before {
+  background-color: var(--accent-color);
+}
+
+.tab-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 30px;
+  transition: all 0.7s ease-in;
+}
+.tab-content__text {
+  width: 50%;
+}
+.tab-content__img {
+  width: 50%;
+  height: 410px;
+  overflow: hidden;
+}
+.tab-content__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tab-content__text h2 {
+  position: relative;
+  font-size: var(--fs-32);
+  color: var(--heading-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.tab-content__text h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+.tab-content__text p {
+  margin-bottom: 30px;
+}
+.tab-content__text p, .tab-content__text ul li {
+  color: var(--default-color);
+  font-size: var(--fs-18);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+}
+.tab-content__text ul li {
+  list-style-image: url("./assets/img/check.png");
+  list-style-position: inside;
+  margin-bottom: 16px;
+}
