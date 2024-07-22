@@ -1,53 +1,73 @@
 @import url("./variables.css");
 
-@media (width <= 1015px) {
+@media (width <= 1100px) {
+  .element-item p {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+
+@media (width <=1015px) {
   nav .navbar-menu ul li a {
     font-size: var(--fs-12);
   }
 }
 
-@media (width <= 991px) {
-  .recent-cards{
+@media (width <=991px) {
+  .recent-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .consequatur .consequatur-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .consequatur .consequatur-img {
     height: 400px;
   }
+
   .services-container .servis-page-heading::before {
     left: -70px;
   }
+
   .services-container .servis-page-heading::after {
     right: -70px;
   }
+
   .services-card__wrapper {
     grid-template-columns: repeat(2, auto);
   }
+
   .construction-card__wrapper {
     grid-template-columns: repeat(1, auto);
   }
+
   .row {
     grid-template-columns: auto;
   }
+
   .login .login-info {
     margin-top: 16px;
   }
+
   .section-1 .texts h1,
   .login .login-info,
   .texts p {
     text-align: center;
   }
+
   .nav-bars {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  nav .navbar-menu > ul {
+
+  nav .navbar-menu>ul {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -63,23 +83,29 @@
     border-radius: 8px;
     z-index: 14;
   }
-  nav .navbar-menu.open > ul {
+
+  nav .navbar-menu.open>ul {
     display: flex !important;
   }
+
   nav .navbar-menu ul li a {
     color: var(--nav-dropdown-color) !important;
     font-weight: 600;
     font-size: var(--fs-16);
   }
+
   nav .navbar-menu ul li a.active {
     color: var(--accent-color) !important;
   }
+
   nav .navbar-menu ul li a::before {
     display: none !important;
   }
+
   nav ul li.dropdown {
     display: none;
   }
+
   .nav-close {
     position: absolute;
     top: 5px;
@@ -87,9 +113,11 @@
     color: var(--nav-dropdown-color);
     display: block !important;
   }
+
   .navbar-menu.open .navbar-mask {
     display: block !important;
   }
+
   .navbar-mask {
     position: fixed;
     top: 0;
@@ -101,6 +129,7 @@
     background-color: var(--nav-bg-mask);
     z-index: 13;
   }
+
   /* .dropdown {
         position: static !important;
     }
@@ -141,59 +170,96 @@
     } */
 }
 
-@media (width <= 768px) {
-  .recent-cards{
+@media (width <=768px) {
+  .element-item {
+    width: calc(50% - 26px);
+  }
+  .tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tab-content {
+    flex-direction: column;
+  }
+  
+  .tab-content__text, .tab-content__img {
+    width: 100%;
+  }
+
+  .recent-cards {
     grid-template-columns: repeat(1, 1fr);
   }
-    .consequatur .consequatur-img {
-        height: 400px;
-      }
+
+  .consequatur .consequatur-img {
+    height: 400px;
+  }
+
   .services-card__wrapper {
     grid-template-columns: repeat(1, auto);
   }
+
   .construction-card__wrapper {
     grid-template-rows: repeat(1, auto);
   }
+
   .construction-card {
     flex-direction: column;
   }
+
   .construction-card .construction-card__img,
   .construction-card .construction-card__info {
     width: 100%;
   }
+
   nav {
     padding: 0 15px !important;
   }
+
   .login-inputs input,
   .login .login-inputs textarea {
     padding: 10px;
   }
+
   .section-1 .texts h1::after {
     width: 100%;
   }
 }
 
-@media (width <= 567px) {
-    .consequatur-info{
-        padding: 0px;
-      }
+@media (width <=567px) {
+
+  .button-group {
+    flex-wrap: wrap;
+  }
+  .element-item {
+    width: calc(100% - 26px);
+  }
+
+
+  .consequatur-info {
+    padding: 0px;
+  }
+
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 25%);
   }
+
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 25%);
   }
+
   .swiper-button-next,
   .swiper-button-prev {
     top: var(--swiper-navigation-top-offset, 85%);
   }
 }
-@media (width <= 480px) {
+
+@media (width <=480px) {
   .services-card {
     padding: 15px;
   }
+
   .services-container {
     padding: 60px 50px;
   }
