@@ -130,9 +130,11 @@ body {
   width: 30px;
   height: 30px;
   background-size: 20px 20px;
-  background-color: color-mix(in srgb,
-      var(--background-color),
-      transparent 90%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 90%
+  );
   padding: 28px;
   border-radius: 50%;
   color: color-mix(in srgb, var(--slider-text), transparent 80%);
@@ -283,7 +285,7 @@ nav.scrolled .navbar-menu ul li a {
   cursor: pointer;
 }
 
-.dropdown-body>ul>li:hover p {
+.dropdown-body > ul > li:hover p {
   color: var(--accent-color);
 }
 
@@ -576,7 +578,7 @@ input[type="number"] {
 }
 
 .services {
-  background-color: #F4F7F6;
+  background-color: #f4f7f6;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -654,7 +656,8 @@ input[type="number"] {
   font-size: 22px;
   position: relative;
   display: inline-block;
-  border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-bottom: 4px solid
+    color-mix(in srgb, var(--heading-color), transparent 90%);
   transition: 0.3s;
 }
 
@@ -704,7 +707,7 @@ input[type="number"] {
   /* background-color: blue; */
 }
 
-.consequatur-info>h3 {
+.consequatur-info > h3 {
   color: var(--heading-color);
   font-family: var(--heading-font);
   font-size: 28px;
@@ -713,8 +716,8 @@ input[type="number"] {
   position: relative;
 }
 
-.consequatur-info>h3::after {
-  content: '';
+.consequatur-info > h3::after {
+  content: "";
   position: absolute;
   bottom: -16px;
   left: 0;
@@ -724,7 +727,7 @@ input[type="number"] {
   background-color: var(--accent-color);
 }
 
-.consequatur-info>p {
+.consequatur-info > p {
   padding-top: 20px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -793,7 +796,7 @@ input[type="number"] {
 .tabs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px
+  gap: 16px;
 }
 
 .tab-link {
@@ -811,7 +814,7 @@ input[type="number"] {
 }
 
 .tab-link::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -866,7 +869,7 @@ input[type="number"] {
 }
 
 .tab-content__text h2::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -910,7 +913,7 @@ input[type="number"] {
 }
 
 .button-group:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -937,7 +940,7 @@ input[type="number"] {
 
 /* clear fix */
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -968,7 +971,7 @@ input[type="number"] {
 }
 
 .grid-items-img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -995,7 +998,7 @@ input[type="number"] {
   color: var(--slider-text);
   font-size: var(--fs-16);
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1028,7 +1031,7 @@ input[type="number"] {
   color: white;
   font-size: var(--fs-18);
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   white-space: nowrap;
   transition: all 0.3s ease-in-out;
 }
@@ -1039,13 +1042,13 @@ input[type="number"] {
   opacity: 0;
 }
 
-.element-item:hover  p,
+.element-item:hover p,
 .element-item:hover .item-sort,
 .element-item:hover .item-icons {
   opacity: 1;
 }
 
-.element-item>* {
+.element-item > * {
   margin: 0;
 }
 
@@ -1080,4 +1083,136 @@ input[type="number"] {
   left: 10px;
   top: 76px;
   font-size: 12px;
+}
+/**************************footer *******************************/
+footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  background: url(./assets/img/footer-bg.jpg) top center no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  position: relative;
+  padding: 10px;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+.footer-top {
+  position: relative;
+  z-index: 9;
+}
+footer hr {
+  border: none;
+  border-top: 1.5px solid #ffffff74;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.footer-about {
+  float: 1;
+  margin-right: 50px;
+}
+.footer-about .footer-logo span {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+.footer-contact {
+  margin-top: 25px;
+  color: var(--slider-text);
+}
+.footer-contact p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+.footer-contact #phone {
+  margin-top: 15px;
+}
+.footer-icon {
+  margin-top: 20px;
+  display: flex;
+}
+.footer-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, #fff, transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, #fff, transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.footer-icon a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.footer-link h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  color: var(--slider-text);
+}
+.footer-link ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-link ul li {
+  padding-top: 15px ;
+  display: flex;
+  align-items: center;
+}
+.footer-link ul li a{
+  color: 
+color-mix(in srgb, #fff, transparent 30%);
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.footer-link ul li a:hover{
+  color: var(--accent-color);
+}
+.footer-text-center {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  margin: 24px auto;
+  text-align: center;
+  color: #fff;
+}
+.footer-text-center p strong {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.footer-text-center .footer-text-center_text {
+  margin-top: 8px;
+  font-size: 13px;
+}
+.footer-text-center_text a{
+  color: var(--accent-color);
+  transition: all 0.3s ease-in-out;
+}
+.footer-text-center_text a:hover{
+  color: color-mix(in srgb, var(--accent-color), transparent 40%) ;
 }

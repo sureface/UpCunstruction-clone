@@ -16,10 +16,13 @@
 }
 
 @media (width <=991px) {
+  .footer-top {
+    grid-template-columns: auto auto auto;
+    row-gap: 30px;
+  }
   .recent-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .consequatur .consequatur-wrapper {
     display: flex;
     flex-direction: column;
@@ -171,6 +174,10 @@
 }
 
 @media (width <=768px) {
+  .footer-top {
+    grid-template-columns: auto auto ;
+    row-gap: 30px;
+  }
   .element-item {
     width: calc(50% - 26px);
   }
@@ -226,7 +233,10 @@
 }
 
 @media (width <=567px) {
-
+  .footer-top {
+    grid-template-columns:  auto;
+    row-gap: 30px;
+  }
   .button-group {
     flex-wrap: wrap;
   }
